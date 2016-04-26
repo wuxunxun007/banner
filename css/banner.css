@@ -1,0 +1,92 @@
+@charset "utf-8";
+.banner{
+	width: 100%;
+	height:360px;
+	overflow: hidden;
+	background-color: #ccc;
+	position: relative;
+}
+
+.banner .bannerList{
+	width: 100%;
+	height:360px;
+}
+.banner .bannerList li{
+	position: absolute;
+	width: 100%;
+	height:360px;
+}
+.banner .bannerList li a.bannerImg{
+	width: 100%;
+	height:100%;
+}
+.banner .bannerList li a.bannerImg img{ 
+	width: 100%;
+	height:100%;
+}
+.banner .bannerList li .bannerText{
+	position: absolute;	
+	top:50px;
+}
+
+.banner .control{
+	position: absolute;
+	top:50%;
+	margin-top:-40px;
+	width: 80px;
+	height: 80px;
+	z-index: 99;
+	background-image: url(../../banner/img/focus_handle.png);
+}
+
+.banner #nextBtn{
+	background-position: -80px 0;
+	right:50px;
+}
+.banner #nextBtn:hover{
+	background-position: -80px -80px;
+}
+
+.banner #prevBtn{
+	background-position:0 0px ;
+	left:50px;
+}
+.banner #prevBtn:hover{
+	background-position: 0px -80px;
+}
+
+.banner .buddle{
+	position: absolute;
+	bottom: 15px;
+	left:50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	z-index: 99;
+}
+
+.banner .buddle li{
+	width: 10px;
+	height: 10px;
+	float: left;
+	background-color: #fff;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;	
+	margin-right:6px;
+	cursor: pointer;
+}
+.banner .buddle li.active{
+	background-color: #f66;
+}
+
+#banner1{
+    height: 500px;
+    width: 1000px;
+}
+
+#banner2{
+	width:600px;
+}
